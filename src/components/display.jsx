@@ -23,6 +23,7 @@ function CVDisplay({ generalInfo, educationInfo, workExperience }) {
       <p>{workExperience.start}</p>
       <p>{workExperience.start}</p>
     </div>
+
   );
 }
 

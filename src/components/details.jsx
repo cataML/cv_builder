@@ -11,9 +11,10 @@ function GeneralInfo({generalInfo, setGeneralInfo}){
         })}
     return(
         <div className="section">
-            <h2>Personal Information</h2>
+            
             {isEditing ? ( 
                 <form className="form">
+                    <h2>Personal Information</h2>
                     <label>Full Name: </label>
                     <input
                         type="text"
@@ -50,14 +51,19 @@ function GeneralInfo({generalInfo, setGeneralInfo}){
                         onChange={handleChange}
                     />
 
-                    <label>Gender: </label>
-                    <input
-                        type="text"
-                        name="gender"
-                        placeholder="M or F"
-                        value={generalInfo.gender}
-                        onChange={handleChange}
-                    />
+                    <div>
+                        <label>Gender: </label>
+                        <select
+                            name="gender"
+                            value={generalInfo.gender}
+                            onChange={handleChange}
+                        >
+                            <option value="">Select Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </div>
+                    
                     <button onClick={()=> setIsEditing(false)}>Submit</button>
                 </form>
             ):(
