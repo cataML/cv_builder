@@ -2,14 +2,42 @@ body {
   font-family: Arial, sans-serif;
   background: #fff;
   font-size: 1rem;
+  text-align: center;
+}
+
+.cv-container{
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    width: 100%;
+    
+}
+
+/* LEFT SIDE */
+.left-panel{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* RIGHT SIDE */
+.right-panel{
+    width: 55%;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    min-height: 100vh;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 .section{
-  width: 50%;
-  justify-self: center;
+  width: 95%;
+  justify-self: left;
   background-color: #fff;
   padding: 1rem;
   box-shadow: 0 5px 10px;
   border-radius: 10px;
+  margin-bottom: 2rem;
 }
 form, .cv-display{
   border: #fff 0.1rem;
@@ -23,10 +51,14 @@ form, .cv-display{
 
 h1{
   color: #150347;
+  font-size: 2rem;
 
 }
-h2, p{
-  color: #fff
+h2{
+  color: #fff;
+  font-size: 1.5rem;
+  background: #666;
+  width: 100%;
 }
 label{
     display: block;
@@ -35,6 +67,8 @@ label{
     text-align: left;
     margin-left: 10px;
     color: #fff;
+    font-size: 0.95rem;
+    margin-left: 0.3rem;
 }
 input {
   display: block;
@@ -49,6 +83,7 @@ input {
 }
 select{
   display: flex;
+  margin-left: 0.3rem
 }
 button {
   padding: 10px 15px;
@@ -72,4 +107,12 @@ button {
   border-radius: 50%;
   font-size: 20px;
   cursor: pointer;
+}
+
+.cv-display{
+  background-color: #fff;
+}
+h3{
+  text-align: left;
+  color: #150347
 }

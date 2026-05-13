@@ -3,7 +3,7 @@ function CVDisplay({ generalInfo, educationInfo, workExperience }) {
     <div className="cv-display">
       <h2>CV Preview</h2>
 
-      <h3>Personal Information</h3>
+      <h3>Personal Information</h3><hr/>
       <p>{generalInfo.name}</p>
       <p>{generalInfo.title}</p>
       <p>{generalInfo.email}</p>

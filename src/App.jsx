@@ -31,28 +31,35 @@ function App(){
     end: ""
   })
   return(
-    <div>
+    <div >
       <h1>CV Builder</h1>
-      <GeneralInfo
-        generalInfo = {generalInfo}
-        setGeneralInfo = {setGeneralInfo}
-      />
-    
-      <EducationInfo
-        educationInfo = {educationInfo}
-        setEducationInfo = {setEducationInfo}
-      />
+      <div className = "cv-container">
+        <div className="left-panel">
+          <GeneralInfo
+            generalInfo = {generalInfo}
+            setGeneralInfo = {setGeneralInfo}
+          />
+        
+          <EducationInfo
+            educationInfo = {educationInfo}
+            setEducationInfo = {setEducationInfo}
+          />
 
-      <WorkExperience
-        workExperience = {workExperience}
-        setWorkExperience = {setWorkExperience}
-      />
+          <WorkExperience
+            workExperience = {workExperience}
+            setWorkExperience = {setWorkExperience}
+          />
 
-      <CVDisplay
-        generalInfo={generalInfo}
-        educationInfo={educationInfo}
-        workExperience={workExperience}
-      />
+        </div>
+        
+        <div className="right-panel">
+          <CVDisplay
+            generalInfo={generalInfo}
+            educationInfo={educationInfo}
+            workExperience={workExperience}
+          />
+        </div> 
+      </div>
     </div>
   );
 }

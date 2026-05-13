@@ -1,7 +1,8 @@
 import { useState } from 'react'
+import '../styles/work.css'
 
 function WorkExperience({workExperience, setWorkExperience}){
-    const [showForm, setShowForm] = useState(false)
+    const [showForm, setShowForm] = useState(false);
     const [isEditing, setIsEditing] = useState(true)
     const handleChange = (e) =>{
         const {name, value} = e.target;
@@ -14,7 +15,7 @@ function WorkExperience({workExperience, setWorkExperience}){
         <div className="section">
             <div className="section-header">
                 <h2>Work Experience</h2>
-                <button type="button" onClick={() => setShowForm(!ShowForm)}>
+                <button type="button" onClick={() => setShowForm(!showForm)}>
                     {showForm ? "-" : "+"}
                 </button>
             </div>
