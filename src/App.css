@@ -12,10 +12,32 @@ body {
     width: 100%;
     
 }
+.header{
+  display: flex;
+  background-color: #150347;
+  justify-content: space-between;
+  padding: 0.25rem;
+}
+h1{
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+.header .button{
+  background-color: #fff;
+  color: #333;
+  width: 8rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
 
-/* LEFT SIDE */
+.header .button:hover {
+  transform: translateX(5px);
+  background-color: #150347;
+  color: #fff;
+}
 .left-panel{
-    width: 45%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -23,7 +45,7 @@ body {
 
 /* RIGHT SIDE */
 .right-panel{
-    width: 55%;
+    width: 100%;
     background: white;
     padding: 30px;
     border-radius: 10px;
@@ -38,8 +60,13 @@ body {
   box-shadow: 0 5px 10px;
   border-radius: 10px;
   margin-bottom: 2rem;
+   transition: all 0.3s ease;
+   
 }
-form, .cv-display{
+.section:hover{
+  transform: translateY(5px);
+}
+form{
   border: #fff 0.1rem;
   width: 90%;
   padding: 20px;
@@ -49,16 +76,11 @@ form, .cv-display{
   border-radius: 10px;
 }
 
-h1{
-  color: #150347;
-  font-size: 2rem;
-
-}
 h2{
-  color: #fff;
+  color: #333;
   font-size: 1.5rem;
-  background: #666;
   width: 100%;
+  text-align: left;
 }
 label{
     display: block;
@@ -85,7 +107,7 @@ select{
   display: flex;
   margin-left: 0.3rem
 }
-button {
+button{
   padding: 10px 15px;
   cursor: pointer;
   width: 25%;

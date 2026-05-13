@@ -32,7 +32,10 @@ function App(){
   })
   return(
     <div >
-      <h1>CV Builder</h1>
+      <div className="header">
+        <h1>CV Builder</h1>
+        <button className="button">Download CV</button>
+      </div>     
       <div className = "cv-container">
         <div className="left-panel">
           <GeneralInfo
