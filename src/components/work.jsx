@@ -15,7 +15,7 @@ function WorkExperience({workExperience, setWorkExperience}){
         <div className="section">
             <div className="section-header">
                 <h2>Work Experience</h2>
-                <button type="button" onClick={() => setShowForm(!showForm)}>
+                <button type="button" onClick={() => setShowForm(!showForm)} className="button">
                     {showForm ? "-" : "+"}
                 </button>
             </div>
@@ -43,7 +43,7 @@ function WorkExperience({workExperience, setWorkExperience}){
                     </div>
                     <div>
                         <label htmlFor="">Duties: </label>
-                        <input 
+                        <textarea 
                             type="text"
                             name="roles"
                             placeholder="Your duties at the company"
